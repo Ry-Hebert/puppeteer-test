@@ -22,6 +22,8 @@ const Puppeteer = require('puppeteer');
         })
         return tvTemp
     })
+
+    await page.screenshot({ path: './screenShots/tvScreenshot.png', fullPage: true})
     await browser.close()
 
     console.log(tvRes)
